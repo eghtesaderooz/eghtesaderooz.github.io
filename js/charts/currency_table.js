@@ -22,9 +22,8 @@ function drawChart() {
 
   
 }
-  
+
  var options = {
-	 'width':580,
 	 'height':400,
 	 };
 
