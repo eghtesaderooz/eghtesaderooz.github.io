@@ -1,0 +1,7 @@
+.sub-nav {
+    padding-right: 12rem;
+}
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+	    float: right;
+		font-family:Tahoma, Geneva, sans-serif;
+}
