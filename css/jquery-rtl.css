@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: right;
+}
+
+.ui-tabs-anchor {
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
