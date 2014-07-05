@@ -7,7 +7,7 @@
             $('#divRss2').FeedEk({
                 FeedUrl: 'http://www.donya-e-eqtesad.com/mining-industry/rss/',
                 MaxCount: 4,
-                ShowDesc: true,
+                ShowDesc: false,
                 ShowPubDate: false,
                 DescCharacterLimit: 1000,
 				DateFormatLang:'fa'
