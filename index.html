@@ -43,6 +43,7 @@
 </head>
 <body>
 
+
 <!--div class="row">
 	<div class="large-2 columns">
 		<div class="panel" align="center">
@@ -51,15 +52,15 @@
     	</div>
     </div-->
 
-    <div class="large-12 columns">
-      <div class="row">
+    <div class="large-12 columns" style="float:center;">
+      <!--div class="row"-->
           <img src="img/logo.png"><br><br>
-    	</div>
+    	<!--/div-->
     </div>
 </div>
 <!----------------------------------------------------------->
 <!--HOME-->
-<a name="home"></a>
+<!--a name="home"></a>
 <div data-magellan-expedition="fixed">
 	<dl class="sub-nav" >
     	
@@ -69,8 +70,14 @@
 		<dd><a href="#">درباره ما</a></dd>
 	</dl>
 
-</div>
-
+</div-->
+	<dl class="sub-nav" >
+    	
+        <dd data-magellan-arrival="home" class="active"><a href="#home">خانه</a></dd>
+		<dd data-magellan-arrival="news"><a href="#news">اخبار</a></dd>
+		<dd><a href="#">نمودارها</a></dd>
+		<dd><a href="#">داده ها</a></dd>
+	</dl>
 <!----------------------------------------------------------->
 <!--Current Prices-->
 <div class="row">
@@ -81,7 +88,7 @@
   </div>
 <!----------------------------------------------------------->
 <!--News Paper's Front page-->
-<div class="large-5 columns panel" >
+<div class="large-8 columns panel" >
     <h5>روزنامه های امروز</h5>
     <div class="orbit-container">
      		<ul class="example-orbit" data-orbit>
@@ -115,7 +122,7 @@
 </div>
 <!----------------------------------------------------------->
 <!--RSS Feed Reader-->
-<div class="large-3 columns ">
+<div class="large-8 columns ">
 	<div class="panel">
 		<h5> اخبار صنعت و معدن </h5>
         <div id="divRss2"></div>
@@ -191,17 +198,25 @@ function myFunction() {
 </div>
 </div>
  
-<footer class="row">
-  <div class="large-12 columns"><hr/>
+ <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
       <div class="row">
- 
-        <div class="large-12 columns">
-            <p>کليه حقوق اين سايت متعلق به موسسه اقتصاد روز بوده و استفاده از مطالب آن با ذکر منبع بلامانع است.</p>
+        <div class="large-4 columns">
+          <ul class="inline-list left">
+            <li style="font-size:12px"><a href="#">درباره ما</a></li>
+            <li style="font-size:12px"><a href="#">تماس با ما</a></li>
+          </ul>
         </div>
- 
+        
+        <div class="large-8 columns">
+          <p style="font-size:12px">©کليه حقوق اين سايت متعلق به تارنمای آماره بوده و استفاده از مطالب آن با ذکر منبع بلامانع است.</p>
+        </div>
+        
       </div>
-  </div>
+    </div>
   </footer>
+    
     
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation/foundation.js"></script>
