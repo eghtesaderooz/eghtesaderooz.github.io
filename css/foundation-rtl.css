@@ -36,3 +36,29 @@ ul {
 img {
     margin: 0 auto;
 }
+.panel {
+
+    margin-bottom: 1.25rem;
+    padding: 0.25rem;
+        padding-top: 0.25rem;
+        padding-right-value: 0.25rem;
+        padding-bottom: 0.25rem;
+        padding-left-value: 0.25rem;
+
+}
+table tr td {
+    font-family: tahoma;
+    font-size: 12px;
+}
+.tabs dd, .tabs .tab-title {
+    float: right;
+}
+
+.tabs .tab-title > a {
+    padding: 0.5rem 1rem;
+        padding-top: 0.5rem;
+        padding-right-value: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left-value: 1rem;
+
+}
