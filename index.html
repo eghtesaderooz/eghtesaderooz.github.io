@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>آماره | شاخص های روز اقتصاد</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/foundation-rtl.css" >
+    <link rel="stylesheet" href="css/foundation-rtl.css">
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/fusioncharts-suite-xt/js/fusioncharts.js"></script>
+    
+	<script src="js/charts/charts-fusion.js"></script>
     <script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.orbit.js"></script>
@@ -81,14 +84,16 @@
 <!----------------------------------------------------------->
 <!--Current Prices-->
 <div class="row">
-  <div class="large-4 columns" >
+  <div class="large-6 columns" >
   <div class= "panel">
-    <div id='currency_table_div' style='font-family: Tahoma'></div  >
+    <!--div id='currency_table_div' style='font-family: Tahoma'></div  -->
+    <div id="chart-container" style="direction:ltr;">FusionCharts will render here</div>
+
   </div>
   </div>
 <!----------------------------------------------------------->
 <!--News Paper's Front page-->
-<div class="large-8 columns panel" >
+<div class="large-6 columns panel" >
     <h5>روزنامه های امروز</h5>
     <div class="orbit-container">
      		<ul class="example-orbit" data-orbit>
@@ -223,6 +228,8 @@ function myFunction() {
 <script src="js/foundation/foundation.orbit.js"></script>
 <script src="js/foundation/foundation.tab.js"></script>
 <script src="js/foundation/foundation.magellan.js"></script>
+	<script src="js/charts/charts-fusion.js"></script>
+
 
 <script type="text/javascript" src="http://momentjs.com/downloads/moment-with-langs.min.js"></script>
 <script type="text/javascript" src="js/FeedEk-master/FeedEk-master/js/FeedEk.js"></script>
