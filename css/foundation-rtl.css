@@ -62,3 +62,14 @@ table tr td {
         padding-left-value: 1rem;
 
 }
+.orbit-bullets {
+
+direction: ltr;
+}
+.orbit-prev {
+direction: ltr;
+}
+.orbit-slide-number {
+
+visibility: hidden;
+}
