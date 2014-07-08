@@ -23,7 +23,7 @@ console.log(data);
 FusionCharts.ready(function () {
 	console.log(data);
     var revenueChart = new FusionCharts({
-        type: 'Line',
+        type: 'Column3D',
         renderAt: 'chart-container',
         width: '100%',
         height: '300',
