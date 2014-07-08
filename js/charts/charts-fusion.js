@@ -18,6 +18,7 @@ data.push({
 }
 }
 console.log(data);
+      FusionCharts.setCurrentRenderer('javascript');
 
 FusionCharts.ready(function () {
 	console.log(data);
