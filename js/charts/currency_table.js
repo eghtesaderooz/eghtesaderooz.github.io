@@ -24,7 +24,10 @@ function drawChart() {
 
  var options = {
 	 'height':400,
+	 
 	 };
+
+
 
 function handleQueryResponse(response) {
  if (response.isError()) {
@@ -33,7 +36,34 @@ function handleQueryResponse(response) {
   }
  var data = response.getDataTable();
  var table = new google.visualization.Table(document.getElementById('currency_table_div'));
- table.draw(data, {showRowNumber: false},{rtlTable: true});
+ table.draw(data, {showRowNumber: false, rtlTable: true});
+ google.visualization.events.addListener(table, 'select', selectHandler);
+
+// The selection handler.
+// Loop through all items in the selection and concatenate
+// a single message from all of them.
+function selectHandler() {
+  var selection = table.getSelection();
+  var message = '';
+  for (var i = 0; i < selection.length; i++) {
+    var item = selection[i];
+    if (item.row != null && item.column != null) {
+      var str = data.getFormattedValue(item.row, item.column);
+      message += '{row:' + item.row + ',column:' + item.column + '} = ' + str + '\n';
+    } else if (item.row != null) {
+      var str = data.getFormattedValue(item.row, 0);
+      message += '{row:' + item.row + ', column:none}; value (col 0) = ' + str + '\n';
+    } else if (item.column != null) {
+      var str = data.getFormattedValue(0, item.column);
+      message += '{row:none, column:' + item.column + '}; value (row 0) = ' + str + '\n';
+    }
+  }
+  if (message == '') {
+    message = 'nothing';
+  }
+  alert('You selected ' + message);
+}
+ 
  }
 
 function handleQueryResponse1(response) {
